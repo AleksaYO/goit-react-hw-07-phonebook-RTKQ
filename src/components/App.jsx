@@ -1,16 +1,11 @@
+import { Toaster } from 'react-hot-toast';
+import { Phonebook } from './Phonebook/Phonebook';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Phonebook />
+      <Toaster position="top-right" reverseOrder={false} />
     </div>
   );
 };
